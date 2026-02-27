@@ -13,6 +13,7 @@ public class App {
 
         AccountService accountService = context.getBean(AccountService.class);
         UserService userService = context.getBean(UserService.class);
+
         ListenerValidator listenerValidator = context.getBean(ListenerValidator.class);
 
         ConsoleListener consoleListener = new ConsoleListener(userService, accountService, listenerValidator);
